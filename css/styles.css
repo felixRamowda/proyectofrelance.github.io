@@ -1,0 +1,333 @@
+/*Siempre que quiera ver que se puede poner en una funcion se puede usar eñ ctrl+espacio*/
+
+/*De la siguiente manera se pueden definir
+variables de colores root:*/
+:root{
+ --color1:#ffffff;
+--Colorprimario: #285A65;
+--Colorsecu :#7CFC00;	
+}
+
+body{
+ font-size: 23px;
+ font-family: 'Krub', bold;
+ background-image: linear-gradient(to top #DFE9F3 0%, var(--color1) 100%);
+}
+
+html {
+    font-size: 80.5%;
+    box-sizing: border-box;
+}
+
+*,*::before,*:after{
+    box-sizing: inherit;
+}
+/*Siempre es bueno agrupar el html
+por clases para espesificar los
+atributos con css*/
+.titulo  { /*La clase titulo hace referencia al primer texto de la pagina:Diseño y Desarrollo Web Frenlance */
+    text-align: center;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+
+ font-size: 18px; 
+ color: var(--Colorprimario) 
+   
+}
+
+@media (max-width: 400px){
+    .titulo1{
+      font-size: 25px;  
+      text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+    .titulo1{
+      font-size: 25px;  
+      text-align: center;
+    }
+}
+
+
+/*en este caso se van aplicar los
+atributos a span que esten detro de
+la clase de: .titulo*/
+.titulo span{ 
+font-size: 30px;
+
+}
+
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+ 
+}
+  .nav-bg{ /*Esta clase hace referencia a la caja donde esta los enlaces Inicio nosotros... ect*/
+    background-color: var(--Colorprimario);
+    padding: 1rem;
+}
+.navegacion-principal{
+     
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+      
+   
+     /*hace que los elementos se separen con el mismo espacio es un
+  aliniamiento*/
+
+}
+
+@media (min-width: 768px){
+    
+    .navegacion-principal{
+      
+       flex-direction: row;
+       justify-content: space-evenly; 
+      
+    
+    }
+}
+
+
+
+.navegacion-principal a{
+   
+    color:#ffffff;
+    font-family: 'Krub', bold;
+        text-decoration: none ;
+      font-size: 1rem;
+     margin-top: auto;
+
+}
+
+
+
+@media (max-width: 768px){
+
+    .navegacion-principal a{
+        padding-top: 30px;
+        margin-top: -17px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+.navegacion-principal a:hover {
+
+    background-color: aquamarine;
+    color: black;
+    font-family: 'Krub', bold;
+    
+}
+
+.Hero{
+   
+   background-image: url(../Imagenes/wwe.jpg); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;/*Esta propiedad es para que la imagen se deslice*/
+   align-items: center;
+   height: 450px;
+   position: relative; 
+}
+
+
+.Contenido-Hero a{
+ text-decoration: none;
+ color: bisque;   
+}
+
+
+.Contenido-Hero{
+ position: absolute;   
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+ width: 100%;
+ height:100%;
+ background-color: rgba(0,0, 0, .6 );
+ 
+}
+
+.Contenido-Hero h2, p{
+color: var(--color1)
+}
+/*Clase para botn*/
+.Boton{
+ background-color: var(--Colorprimario);
+  color: #ffffff;
+   padding: 1rem 3rem;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase ;
+  font-weight: bold;
+  border-radius: .5rem;
+  text-align: center;
+  border: none;
+}
+
+.Boton:hover{
+    cursor: pointer;
+}
+
+.sombra{
+    -webkit-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+
+background-color:aliceblue ;
+border-radius: 1rem;
+}
+
+
+/*De esta manera pudimos crear las columnas correspondientes a la parte de servicios*/
+.Servicios{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem; /*Funciona para agregar separaciones a las columnas*/
+}
+
+@media (max-width: 820px){
+    .Servicios{
+
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 2rem; /*Funciona para agregar separaciones a las columnas*/
+    }
+}
+
+
+
+
+
+.Servicio{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+
+
+
+
+
+
+.Servicios p{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+ text-align: center;
+}
+/*Esta parte tiene ver con el area de: Mis servicios*/
+.Servicio .iconos{
+  height: 10rem;
+width: 10rem;
+background-color: #285A65;
+border-radius: 50%;
+/*Esta parte del codigo fue para hacer la parte de los circulos y los iconos de
+servicio*/
+display: flex;
+justify-content: space-evenly;  
+align-items: center;
+}
+
+
+
+
+
+
+/*Contacto*/
+.Formulario{
+background-color: grey;
+width: min(50rem, 100%);
+  /*Utiliza el valor mas pequeño entre 60rem*/
+  margin: 0 auto;
+ padding: 2rem;
+ border-radius: 1rem;
+}
+/*Esta parte es para quitar los bordes de los formularios*/
+.Formulario fieldset{
+    border: none;
+}
+
+.formula h3{
+ 
+ text-align: center;
+
+}
+
+.Formulario legend{
+    text-align: center; /*centramos el texto*/
+    font-size: 1.8rem;/*tamaño del texto*/
+    text-transform: uppercase; /*Para que se transforme en mayusculas*/
+     font-weight: 700; /*Letra en negritas*/
+    margin-bottom: 2rem; /*para que se separe un poco*/
+    color: #ffffff; /*Color del texto*/
+}
+
+
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: antiquewhite;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    padding: 1.5rem;
+    border:none;
+    border-radius: 1rem;
+}
+
+.text-area{
+  width: 100%;
+  padding: 5rem;
+  border:none;
+  border-radius: 1rem;  
+  border:none;
+}
+
+
+/*Esta es como un modificador de una clase que ya tenemos: 'Boton' al cual
+le agregamos un width de 100% a como se puede ver el boton: 'Enviar' en el 
+formulario de contacto*/
+.enviar .Boton{
+    width: 100%;
+}
+
+
+/*MediaQuery de los formualarios*/
+ @media (min-width: 768px){
+   .contenedor-campos{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: auto auto 20rem ;
+      column-gap: 1rem;
+   }
+   .campo:nth-child(3),
+   .campo:nth-child(4){
+        grid-column: 1 / 3;
+    }
+
+}
