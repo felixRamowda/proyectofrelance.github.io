@@ -108,7 +108,7 @@ font-size: 30px;
     .navegacion-principal a{
         padding-top: 30px;
         margin-top: -17px;
-        text-align: center;
+    
     }
 }
 
@@ -129,13 +129,13 @@ font-size: 30px;
 
 .Hero{
    
-   background-image: url(../Imagenes/wwe.jpg); 
+   background-image: url(../Imagenes/ww_optimized.jpg); 
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    background-attachment: fixed;/*Esta propiedad es para que la imagen se deslice*/
    align-items: center;
-   height: 450px;
+   height: 500px;
    position: relative; 
 }
 
