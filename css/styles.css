@@ -119,6 +119,8 @@ font-size: 30px;
 
 
 
+
+
 .navegacion-principal a:hover {
 
     background-color: aquamarine;
@@ -331,3 +333,16 @@ formulario de contacto*/
     }
 
 }
+
+
+/*ACTUALIZACION DE FOOTER*/
+footer{
+    text-transform: uppercase;  
+    margin-top: 2rem;   
+    font-size: 24px;
+}
+
+
+
+
+
