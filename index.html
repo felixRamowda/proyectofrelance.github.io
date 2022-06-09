@@ -14,23 +14,61 @@
     
     <!--Enlazamos la carpeta que tenemos el archvivo css dentro de head-->
     <link href="css/styles.css" rel="stylesheet">
-</head>
+    
+    <!--Implementacion de iconos-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <!--linkeamos el archivo index.js-->
+     <script defer src="index.js"> </script>      
+
+    </head>
+
+
+
 <body> <!--El body es el cuerpo pricipal del documento-->
-    <header> <!--Dentro de la etiqueta Header van elementos de texto como los son  los h1-->
-        <h1 class="titulo"> Diseño y Desarrollo Web <span>Frenlance</span> </h1>
-    </header>
- <!---la nav es una etiqueta que funciona para agregar enlaces como los siguientes:
-    general mente se usa para enlazar otros documentos(nos redirige) -->
+    
+  
+  <header class="header">
+    
    
-   <div class="nav-bg">
-    <nav class="navegacion-principal contenedor">  
-       <!-- <img src="Imagenes/ww.jpg" alt="">-->
-        <a href="#">INICIO</a> 
-        <a href="nosotros.html">NOSOTROS</a>
-        <a href="#">CLIENTES</a>
-        <a href="#">CONTACTO</a>
-      </nav>
-</div>
+    
+         <nav class="navegacion-principal">  
+              
+          <button class="btn-barra">
+            <ion-icon name="menu-outline"></ion-icon>
+       </button> 
+              <ul class="ul-container barra_visible">
+                <li class="li-container">
+                  <a  class="a-nav"  href="#">INICIO</a>
+                </li>
+                <li class="li-container">
+                  <a  class="a-nav"  href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="li-container">
+                  <a  class="a-nav"  href="#">CLIENTES</a>
+                </li>
+                <li class="li-container">
+                  <a  class="a-nav"  href="#">CONTACTO</a>
+                </li>
+                
+              </ul>
+          
+  
+     </nav>
+</header> <!--fin del header-->
+   
+  <!---la nav es una etiqueta que funciona para agregar enlaces como los siguientes:
+    general mente se usa para enlazar otros documentos(nos redirige) -->
+  
+
+
+
+
+
+
+
+
+
    <!--a: para dejar un enlace: 
    <a href = "http://html5doctor.com/author/jacko/" > EJEMPLO </a> 
     bien funciona para redirigir a otro docuemto o para dejar un 
