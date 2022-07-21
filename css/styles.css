@@ -133,33 +133,6 @@ atributos con css*/
 
 
 
-  
-/*
- Media query para barra de navegacion
-@media (max-width: 768px){
-.nav-bg{
-    background-color: #2c3e50;
-    position: fixed;
-    left: 0;
-    top: 50px;
-    height: calc(100% - 50px); /*esta funcion sirve para que la barra nav cuando estemos en dispositivos
-    moviles cubra todo el espacio 100% - el alto del header
-    overflow-y: auto;
-    left:100%;
-    /*Esto sirve para ocultar la barra
-    hacia la derecha si quitamos esta funcion
-    la barra nav tomara todo el espacio de nuevo
-    
-   transition: left 0.3s;
-
-    
-}
-}
-
-*/
-
-
-
 
 
 
